@@ -10,6 +10,7 @@ $finder = PhpCsFixer\Finder::create()->in([
 return (new PhpCsFixer\Config())
     ->setRiskyAllowed(true)
     ->setRules([
+        '@PSR12' => true,
         'array_push' => true,
         'ereg_to_preg' => true,
         'mb_str_functions' => true,
